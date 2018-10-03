@@ -1,6 +1,6 @@
 
-# Better Market - DAPP
-To use ReactJS, Es6, & Webpack:
+# Better Market - dApp
+To use ReactJS, ES6, Truffle, Infura Webpack 4:
 
 # MVC Code
 https://github.com/march-dave/dApp-react-BetterMarket
