@@ -18,7 +18,7 @@ truffle migrate --compile-all --reset --network ropsten
 
 #"start": "webpack-dev-server --open"
 
-## url: https://dapp-react-bettermarket.herokuapp.com/
+## url: https://dapp-react-ad.herokuapp.com/
 
 
 ## logo deployed into IPFS
