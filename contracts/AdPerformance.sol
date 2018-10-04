@@ -5,7 +5,7 @@ contract AdPreformance {
     address public owner;
 
     constructor() public {
-        owner = msg.owner;
+        owner = msg.sender;
     }
 
 }
