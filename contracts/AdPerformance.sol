@@ -1,5 +1,5 @@
 pragma solidity ^0.4.23;
-import "./oraclizeAPI_0.4.sol";
+import "./oraclizeAPI.sol";
 
 contract AdPreformance is usingOraclize {
 
