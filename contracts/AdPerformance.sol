@@ -1,7 +1,6 @@
 pragma solidity ^0.4.0;
 import "./oraclizeAPI_0.5.sol"; //API copied from the oraclize github folder
 
-
 contract RandomOrg is usingOraclize {
     string public res;
 
