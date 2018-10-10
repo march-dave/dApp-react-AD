@@ -2,7 +2,7 @@ pragma solidity ^0.4.23;
 
 // import "oraclizeAPI_0.5.sol";
 
-import "./oraclizeAPI_0.5.sol";
+import "./oraclizeAPI_0.4.sol";
 
 contract RandomOrg is usingOraclize {
     string public res;
