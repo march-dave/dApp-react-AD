@@ -1,8 +1,6 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.4.0;
+import "./oraclizeAPI_0.5.sol"; //API copied from the oraclize github folder
 
-// import "oraclizeAPI_0.5.sol";
-
-import "./oraclizeAPI_0.4.sol";
 
 contract RandomOrg is usingOraclize {
     string public res;
