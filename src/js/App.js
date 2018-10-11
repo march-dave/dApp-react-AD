@@ -16,6 +16,7 @@ import Menu from "./Menu.js";
 import $ from "jquery";
 import utf8 from "utf8";
 import ProductCarousel from "./container/ProductCarousel.js";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
