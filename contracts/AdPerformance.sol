@@ -23,18 +23,18 @@ youtubeId,'&key=AIzaSyAhV6cw7pjvrrBoSkIDxff4gvovbF_9rXk%20&part=statistics).item
     }  
     
     function __callback(bytes32, string result) public {
-        require(msg.sender == oraclize_cbAddress());
-        require(!withdrawn);
+        // require(msg.sender == oraclize_cbAddress());
+        // require(!withdrawn);
         
-        uint viewCount = stringToUint(result);
-        uint amount = viewCount * gweiToPayPerView * 1000000000;
-        uint balance = address(this).balance;
+        // uint viewCount = stringToUint(result);
+        // uint amount = viewCount * gweiToPayPerView * 1000000000;
+        // uint balance = address(this).balance;
         
-        if (balance < amount) {
-            amount = balance;
-        }
+        // if (balance < amount) {
+        //     amount = balance;
+        // }
         
-        beneficiary.transfer(amount);
+        // beneficiary.transfer(amount);
         withdrawn = true;
     }
     
