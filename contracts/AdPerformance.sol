@@ -18,8 +18,7 @@ function withdraw() public {
         require(!withdrawn);
         
         string memory query = strConcat('json(https://www.googleapis.com/youtube/v3/videos?id=',
-                youtubeId,
-                '&key=AIzaSyAhV6cw7pjvrrBoSkIDxff4gvovbF_9rXk%20&part=statistics).items.0.statistics.viewCount');
+youtubeId,'&key=AIzaSyAhV6cw7pjvrrBoSkIDxff4gvovbF_9rXk%20&part=statistics).items.0.statistics.viewCount');
         oraclize_query('URL', query);
     }  
     
