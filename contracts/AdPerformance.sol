@@ -1,6 +1,8 @@
 pragma solidity ^0.4.23;
 
-contract AdPerformance {
+import './oraclizeAPI_0.5.sol';
+
+contract AdPerformance is usingOraclize {
     address owner;
     address beneficiary;
     uint gweiToPayPerView;
