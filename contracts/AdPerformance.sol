@@ -2,7 +2,7 @@ pragma solidity ^0.4.23;
 
 import './oraclizeAPI_0.5.sol';
 
-contract AdPerformance is usingOraclize {
+contract DieselPrice is usingOraclize {
     event newOraclizeQuery(string description);
     event newDieselPrice(string price);
     function DieselPrice() {
