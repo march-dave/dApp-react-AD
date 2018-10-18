@@ -5,7 +5,7 @@ import './oraclizeAPI_0.5.sol';
 contract DieselPrice is usingOraclize {
     event newOraclizeQuery(string description);
     event newDieselPrice(string price);
-    function DieselPrice() {
+    DieselPrice() public {
         update(); 
     }
   
@@ -17,6 +17,6 @@ contract DieselPrice is usingOraclize {
   function update() payable {        
     newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
         
-    oraclize_query("URL","xml(https://www.fueleconomy.gov/ws/rest/fuelprices).fuelPrices.diesel");
+    oraclize_query("URL","xml(https://www.fueleconomy.gov/ws/rest/fuelprices.fuelPrices.diesel");
   }
 }
