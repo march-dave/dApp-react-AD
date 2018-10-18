@@ -5,7 +5,8 @@ import './oraclizeAPI_0.5.sol';
 contract DieselPrice is usingOraclize {
     event newOraclizeQuery(string description);
     event newDieselPrice(string price);
-    DieselPrice() public {
+    
+    constructor() public {
         update(); 
     }
   
