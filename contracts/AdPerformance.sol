@@ -15,9 +15,9 @@ contract DieselPrice is usingOraclize {
     newDieselPrice(result);
   }
   
-  function update() payable {        
-    newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
+  // function update() payable {        
+  //   newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
         
-    oraclize_query("URL","xml(https://www.fueleconomy.gov/ws/rest/fuelprices.fuelPrices.diesel");
-  }
+  //   oraclize_query("URL","xml(https://www.fueleconomy.gov/ws/rest/fuelprices.fuelPrices.diesel");
+  // }
 }
