@@ -10,10 +10,10 @@ contract DieselPrice is usingOraclize {
   //       update(); 
   //   }
   
-  // function __callback(bytes32 myid, string result) {
+  function __callback(bytes32 myid, string result) {
   //   if (msg.sender != oraclize_cbAddress()) throw;
   //   newDieselPrice(result);
-  // }
+  }
   
   // function update() payable {        
   //   newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
