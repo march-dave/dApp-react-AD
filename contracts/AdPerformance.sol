@@ -11,7 +11,7 @@ contract DieselPrice is usingOraclize {
   //   }
   
   function __callback(bytes32 myid, string result) {
-  //   if (msg.sender != oraclize_cbAddress()) throw;
+    if (msg.sender != oraclize_cbAddress()) throw;
   //   newDieselPrice(result);
   }
   
