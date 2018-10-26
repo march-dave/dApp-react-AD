@@ -9,9 +9,11 @@ contract DieselPrice is usingOraclize {
   //   update(); 
   // }
 
-  constructor() public {
-    
-  }
+    address public owner;
+
+    constructor() public {
+        owner = msg.sender;
+    }
 
   // function __callback(bytes32 myid, string result) {
   //   if (msg.sender != oraclize_cbAddress()) throw;
