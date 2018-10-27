@@ -9,16 +9,16 @@ contract DieselPrice is usingOraclize {
   //   update(); 
   // }
 
-    address public owner;
+  //   address public owner;
 
-    constructor() public {
-        owner = msg.sender;
-    }
+  //   constructor() public {
+  //       owner = msg.sender;
+  //   }
 
-    function __callback(bytes32 myid, string result) {
-      if (msg.sender != oraclize_cbAddress()) throw;
-      newDieselPrice(result);
-   }
+  //   function __callback(bytes32 myid, string result) {
+  //     if (msg.sender != oraclize_cbAddress()) throw;
+  //     newDieselPrice(result);
+  //  }
   // function update() payable {        
   //   newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
         
