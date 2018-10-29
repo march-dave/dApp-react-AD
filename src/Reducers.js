@@ -6,6 +6,16 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "SET_USER_NAME": {
+        return {
+            ...state,
+            username: action.user
+        }
+    }
+    case "SET_USER_EMAIL": {
+        return {
+            ...state,
+            useremail: action.user
+        }
     }
     default:
       return state;
