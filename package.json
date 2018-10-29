@@ -1,5 +1,5 @@
 {
-    "name": "BetterMarket",
+    "name": "AD",
     "version": "1.0.0",
     "description": "",
     "main": "truffle.js",
@@ -40,7 +40,7 @@
         "nuka-carousel": "^4.3.6",
         "popper.js": "^1.14.4",
         "prop-types": "^15.6.2",
-        "react": "^16.2.0",
+        "react": "^16.6.0",
         "react-dom": "^16.2.0",
         "react-router-dom": "^4.3.1",
         "reactstrap": "^6.4.0",
