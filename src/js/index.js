@@ -8,9 +8,12 @@ import reducer from "./Reducers";
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
+const myStore = createStore(reducer);
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Provider store={myStore}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );
