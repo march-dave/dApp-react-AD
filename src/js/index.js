@@ -4,11 +4,11 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { createStore } from "redux";
 import { Provier } from "react-redux";
-import reducer from "./Reducers";
+import reducers from "./Reducers";
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
-const myStore = createStore(reducer);
+const myStore = createStore(reducers);
 ReactDOM.render(
   <Provider store={myStore}>
     <BrowserRouter>
