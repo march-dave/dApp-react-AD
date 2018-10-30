@@ -11,7 +11,7 @@ const action = item => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    itemsearch: e => dispatch(action(e.target.valeu))
+    itemsearch: e => dispatch(action(e.target.value))
   };
 };
 

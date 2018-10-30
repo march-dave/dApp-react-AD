@@ -24,6 +24,6 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-const reducers = combineReducers({reducer})
+const reducers = combineReducers({ reducer });
 
 export default reducers;
