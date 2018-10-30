@@ -121,26 +121,35 @@ class App extends React.Component {
               .attr("src")
               .substr(21);
 
-              console.log('imgType: ' + imgType);
+            console.log("imgType: " + imgType);
 
             switch (imgType) {
               case "QmaA49MkdTD5wQmYQz3jABUmjaS7nHJXt7Hdh6Tkw1912u":
                 $(".panel-betterMarket")
                   .eq(i)
                   .find("img")
-                  .attr("src", "https://ipfs.io/ipfs/QmY1oBSi5EttJQVnwkBNTZ233ZKVzPLWsWtBWxPEojVWcD");
+                  .attr(
+                    "src",
+                    "https://ipfs.io/ipfs/QmY1oBSi5EttJQVnwkBNTZ233ZKVzPLWsWtBWxPEojVWcD"
+                  );
                 break;
               case "QmZ799f5fXymwKRyXZHHGW52S512Mr3BwmunUAoMkeBLn4":
                 $(".panel-betterMarket")
                   .eq(i)
                   .find("img")
-                  .attr("src", "https://ipfs.io/ipfs/QmRzWoDoReXp4iSDRZ8QCwf5NW6eVxiwHnuLp4Ux3yPF4u");
+                  .attr(
+                    "src",
+                    "https://ipfs.io/ipfs/QmRzWoDoReXp4iSDRZ8QCwf5NW6eVxiwHnuLp4Ux3yPF4u"
+                  );
                 break;
               case "Qmd7gbpwWiMw5WJ3MiwLnfaoyVpcy5PMWBY9QdeUgwo5SA":
                 $(".panel-betterMarket")
                   .eq(i)
                   .find("img")
-                  .attr("src", "https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1");
+                  .attr(
+                    "src",
+                    "https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1"
+                  );
                 break;
             }
 
@@ -177,10 +186,15 @@ class App extends React.Component {
         .deployed()
         .then(instance => {
           let nameUtf8Encoded = utf8.encode(name);
-          return instance.buyBetterMarket(id, web3.toHex(nameUtf8Encoded), age, {
-            from: account,
-            value: price
-          });
+          return instance.buyBetterMarket(
+            id,
+            web3.toHex(nameUtf8Encoded),
+            age,
+            {
+              from: account,
+              value: price
+            }
+          );
         })
         .then(() => {
           $("#name").val("");
@@ -261,7 +275,7 @@ class App extends React.Component {
                       value={c.id}
                     >
                       Buy
-                    </button>{" "}
+                    </button>
                     &nbsp;
                     <button
                       className="btn btn-info btn-buyerInfo"
@@ -366,7 +380,7 @@ class App extends React.Component {
           </div>
         </div>
 
-         <div id="events">
+        <div id="events">
           {this.state.events.map(c => {
             return (
               <div>
@@ -375,7 +389,6 @@ class App extends React.Component {
             );
           })}
         </div>
-
       </div>
     );
   }
