@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { map } from "rxjs/operators";
 
 const action = item => {
   return {
