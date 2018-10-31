@@ -17,6 +17,8 @@ import $ from "jquery";
 import utf8 from "utf8";
 import ProductCarousel from "./container/ProductCarousel.js";
 
+import Search from "./Search";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -210,6 +212,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
+      <Search />
         <div
           className="row"
           // style={{ background: "#64b5f6", height: "50px", color: "#FFF" }}

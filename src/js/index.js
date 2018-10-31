@@ -6,8 +6,6 @@ import { createStore } from "redux";
 import { Provier } from "react-redux";
 import reducers from "./Reducers";
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-
 const myStore = createStore(reducers);
 ReactDOM.render(
   <Provider store={myStore}>

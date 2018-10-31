@@ -13,7 +13,6 @@ const mapDispatchToProps = dispatch => {
     itemsearch: e => dispatch(action(e.target.value))
   };
 };
-
 class Search extends Component {
   render() {
     return (
