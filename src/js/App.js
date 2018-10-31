@@ -212,11 +212,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-      <Search />
+      
         <div
           className="row"
           // style={{ background: "#64b5f6", height: "50px", color: "#FFF" }}
         >
+        <Search />
           <div className="col-sm">
             {/* <img
               src="https://ipfs.io/ipfs/Qmb5pp2h9oVUUJDPGTGtBcqNcqZdBNbJzwMj2YPRUNdpeu"
