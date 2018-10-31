@@ -17,7 +17,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <input type="text" onChange={this.props.itemsearch} />
+        <input type="text" onChange={this.props.itemsearch} placeholder="search" />
       </div>
     );
   }
