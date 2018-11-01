@@ -42,6 +42,6 @@ https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1
 
 
 # docker create image
-# docker build -t dave/dapp-react-ad
+# docker build -t dave/dapp-react-ad .
 
 # docker run -p 3000:3000 -d dave/docker-dapp-ad
